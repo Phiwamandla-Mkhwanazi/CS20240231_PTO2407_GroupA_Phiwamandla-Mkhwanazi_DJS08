@@ -13,7 +13,7 @@
  * Review challenge: do all the CSS yourself based on the design
  * linked in the slides.
  */
-import { BrowserRouter, Routes, Route } from "react-router-dom"
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom"
 
 
 function Home() {
@@ -33,6 +33,8 @@ function About() {
 function App() {
   return (
     <BrowserRouter>
+      <Link to="/">Home</Link>
+      <Link to="/about">About</Link>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
