@@ -13,12 +13,33 @@
  * Review challenge: do all the CSS yourself based on the design
  * linked in the slides.
  */
+import { BrowserRouter, Routes, Route } from "react-router-dom"
 
-function App() {
 
+function Home() {
   return (
-    <h1>Start here</h1>
+    <h1>Hello, React Router!</h1>
   )
 }
+
+function About() {
+  return (
+    <h1>About page goes here! 🎉</h1>
+  )
+}
+
+
+
+function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+    </BrowserRouter>
+  )
+}
+
 
 export default App
