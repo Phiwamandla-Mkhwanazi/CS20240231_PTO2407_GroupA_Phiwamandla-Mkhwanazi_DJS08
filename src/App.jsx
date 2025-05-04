@@ -17,6 +17,8 @@ import { BrowserRouter, Routes, Route, Link } from "react-router-dom"
 //Pages
 import Home from './pages/Home';
 import About from './pages/About';
+//Server
+//import "../server";
 
 function App() {
   return (
