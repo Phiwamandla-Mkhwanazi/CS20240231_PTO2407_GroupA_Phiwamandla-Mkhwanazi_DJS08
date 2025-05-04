@@ -11,7 +11,7 @@ function HostHeader()
     return(
 
         <nav className='host-nav'>
-                  <NavLink 
+                <NavLink 
                     to="/host"
                     end
                     style={({isActive}) => isActive ? activeStyles : null}
@@ -24,6 +24,13 @@ function HostHeader()
                     style={({isActive}) => isActive ? activeStyles : null}
                 >
                     Income
+                </NavLink>
+
+                <NavLink 
+                    to="/host/vans" 
+                    style={({isActive}) => isActive? activeStyles : null}
+                >
+                    Vans
                 </NavLink>
                 
                 <NavLink 
