@@ -77,6 +77,7 @@ main {
 }
 
 footer {
+  
   background-color: #161616;
   color: #aaaaaa;
   height: 74px;
@@ -84,7 +85,7 @@ footer {
   flex-shrink: 0;
   justify-content: center;
   align-items: center;
-  margin-top: auto;
+  margin-top: 1em;
   font-weight: 500;
 }
 
@@ -118,6 +119,10 @@ footer {
 
 /*** HOME PAGE ***/
 .home-container {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.46), rgba(0, 0, 0, 0.46)),
       url("../public/home-hero.png") no-repeat center center;
   -webkit-background-size: cover;
@@ -127,6 +132,8 @@ footer {
   min-height: 350px;
   color: white;
   padding: 45px 23px;
+  min-height: 90vh;
+  min-width: 80vh;
 }
 
 .home-container h1 {
