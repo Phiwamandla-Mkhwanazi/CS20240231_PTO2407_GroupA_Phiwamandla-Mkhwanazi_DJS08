@@ -26,5 +26,10 @@ createServer({
             const id = request.params.id
             return schema.vans.find(id)
         })
+
+        // Added this route
+        this.get("/host/vans", (schema) => {
+        return schema.vans.all()
+        })
     }
 })
