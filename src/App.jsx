@@ -14,27 +14,19 @@
  * linked in the slides.
  */
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom"
-
-
-function Home() {
-  return (
-    <h1>Hello, React Router!</h1>
-  )
-}
-
-function About() {
-  return (
-    <h1>About page goes here! 🎉</h1>
-  )
-}
-
-
+//Pages
+import Home from './pages/Home';
+import About from './pages/About';
 
 function App() {
   return (
     <BrowserRouter>
-      <Link to="/">Home</Link>
-      <Link to="/about">About</Link>
+         <header>
+          <Link to="/">#VANLIFE</Link>
+          <nav>
+            <Link to="/about">About</Link>
+          </nav>
+        </header>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
