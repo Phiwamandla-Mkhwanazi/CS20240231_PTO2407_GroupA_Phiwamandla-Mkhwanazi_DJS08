@@ -1,5 +1,4 @@
 import React from "react"
-import { useNavigate } from "react-router-dom"
 
 function Login() {
     const [loginFormData, setLoginFormData] = React.useState({ email: "", password: "" })
