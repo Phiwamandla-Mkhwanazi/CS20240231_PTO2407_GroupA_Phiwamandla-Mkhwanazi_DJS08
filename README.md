@@ -1,6 +1,8 @@
 # DJS08 Project Brief: React Router 
 
-🎥 INSERT LOOM PRESENTATION LINK: [Here]
+🎥 INSERT LOOM PRESENTATION LINK:   [Here]
+
+🌍 Deploy using Netlify  LINK:      [(https://vanlifecs.netlify.app/)]
 
 After cloning the repo, run `npm install` to install the dependencies 
 
